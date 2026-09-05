@@ -1,0 +1,33 @@
+package main
+
+import (
+	"fmt" // এই ইম্পোর্টটা মিস হয়েছিল ভাই!
+	"github.com/gin-gonic/gin"
+	"vx-api/auth"
+	"vx-api/database"
+)
+
+func main() {
+	// ডাটাবেজ কানেকশন শুরু
+	database.InitDB()
+
+	// Gin রিলিজ মোড সেটআপ (প্রোডাকশনের জন্য ফাস্ট ইঞ্জিনিয়ারিং)
+	gin.SetMode(gin.ReleaseMode)
+	r := gin.Default()
+
+	// এপিআই রাউটিং ম্যাপ
+	api := r.Group("/api/v1")
+	{
+		authGroup := api.Group("/auth")
+		{
+			authGroup.POST("/email-request", auth.RequestEmailOTP)
+			authGroup.POST("/email-verify", auth.VerifyEmailOTP)
+			authGroup.POST("/social", auth.SocialAuth)
+		}
+	}
+
+	// আপনার এপিআই সার্ভার পোর্টে রান হবে
+	fmt.Println("VX API Engine Running on Port :8080...")
+	r.Run(":8080")
+}
+

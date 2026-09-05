@@ -1,0 +1,124 @@
+MAIN: Start
+PostgreSQL Connected ✅
+MAIN: DB Init Done
+REDIS: Skipping initialization for stability...
+MAIN: Redis Init Done
+MAIN: Seed Sounds Done
+2026/09/04 10:53:11 error getting messaging client: project ID is required to access Firebase Cloud Messaging client
+MAIN: Firebase Init Done
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /uploads/*filepath        --> main.main.main.func2.func5 (4 handlers)
+[GIN-debug] HEAD   /uploads/*filepath        --> main.main.main.func2.func5 (4 handlers)
+[GIN-debug] GET    /public/*filepath         --> main.main.main.func2.func6 (4 handlers)
+[GIN-debug] HEAD   /public/*filepath         --> main.main.main.func2.func6 (4 handlers)
+[GIN-debug] POST   /api/v1/auth/email-request --> vx-api/Auth.RequestEmailOTP (4 handlers)
+[GIN-debug] POST   /api/v1/auth/email-verify --> vx-api/Auth.VerifyEmailOTP (4 handlers)
+[GIN-debug] POST   /api/v1/auth/social       --> vx-api/Auth.SocialAuth (4 handlers)
+[GIN-debug] POST   /api/v1/auth/refresh      --> vx-api/Auth.RefreshToken (4 handlers)
+[GIN-debug] GET    /api/v1/home/foryou       --> vx-api/Home.GetForYouVideos (5 handlers)
+[GIN-debug] GET    /api/v1/home/following    --> vx-api/Home.GetFollowingVideos (5 handlers)
+[GIN-debug] GET    /api/v1/home/friends      --> vx-api/Home.GetFriendsVideos (5 handlers)
+[GIN-debug] GET    /api/v1/home/stories      --> vx-api/Home.GetStories (5 handlers)
+[GIN-debug] POST   /api/v1/home/track        --> vx-api/Home.TrackInteraction (5 handlers)
+[GIN-debug] POST   /api/v1/interaction/like  --> vx-api/Home.ToggleLike (5 handlers)
+[GIN-debug] POST   /api/v1/interaction/save  --> vx-api/Home.ToggleSave (5 handlers)
+[GIN-debug] POST   /api/v1/interaction/follow --> vx-api/Home.ToggleFollow (5 handlers)
+[GIN-debug] DELETE /api/v1/interaction/video/:id --> vx-api/Home.DeleteVideo (5 handlers)
+[GIN-debug] DELETE /api/v1/video/:id         --> vx-api/Home.DeleteVideo (5 handlers)
+[GIN-debug] POST   /api/v1/video/:id/view    --> vx-api/Home.IncrementViews (4 handlers)
+[GIN-debug] GET    /api/v1/video/:id         --> vx-api/Home.GetVideoById (5 handlers)
+[GIN-debug] POST   /api/v1/report            --> vx-api/Home.SubmitReport (5 handlers)
+[GIN-debug] GET    /api/v1/video/:id/comments --> vx-api/Home/Comment.GetComments (5 handlers)
+[GIN-debug] POST   /api/v1/video/:id/comment --> vx-api/Home/Comment.PostComment (5 handlers)
+[GIN-debug] POST   /api/v1/video/:id/comment/voice --> vx-api/Home/Comment.PostVoiceComment (5 handlers)
+[GIN-debug] POST   /api/v1/video/comment/:id/like --> vx-api/Home/Comment.ToggleCommentLike (5 handlers)
+[GIN-debug] DELETE /api/v1/video/comment/:id --> vx-api/Home/Comment.DeleteComment (5 handlers)
+[GIN-debug] POST   /api/v1/video/comment/:id/pin --> vx-api/Home/Comment.PinComment (5 handlers)
+[GIN-debug] GET    /api/v1/sticker/list      --> vx-api/Home/Sticker.GetStickers (5 handlers)
+[GIN-debug] GET    /api/v1/sticker/saved     --> vx-api/Home/Sticker.GetSavedStickers (5 handlers)
+[GIN-debug] POST   /api/v1/sticker/save/:id  --> vx-api/Home/Sticker.SaveSticker (5 handlers)
+[GIN-debug] DELETE /api/v1/sticker/save/:id  --> vx-api/Home/Sticker.UnsaveSticker (5 handlers)
+[GIN-debug] POST   /api/v1/sticker/create    --> vx-api/Home/Sticker.CreateSticker (5 handlers)
+[GIN-debug] GET    /api/v1/user/suggested    --> vx-api/Profile.GetSuggestedUsers (5 handlers)
+[GIN-debug] GET    /api/v1/user/categories   --> vx-api/Profile.GetCategories (5 handlers)
+[GIN-debug] POST   /api/v1/user/onboard      --> vx-api/Profile.SaveOnboardingData (5 handlers)
+[GIN-debug] POST   /api/v1/user/profile/avatar --> vx-api/Profile.UploadAvatar (5 handlers)
+[GIN-debug] POST   /api/v1/user/profile/cover --> vx-api/Profile.UploadCover (5 handlers)
+[GIN-debug] POST   /api/v1/user/profile/fcm-token --> vx-api/Profile.SaveFCMToken (5 handlers)
+[GIN-debug] GET    /api/v1/user/videos       --> vx-api/Profile.GetMyVideos (5 handlers)
+[GIN-debug] GET    /api/v1/user/videos/liked --> vx-api/Profile.GetLikedVideos (5 handlers)
+[GIN-debug] GET    /api/v1/user/videos/saved --> vx-api/Profile.GetSavedVideos (5 handlers)
+[GIN-debug] GET    /api/v1/user/videos/commented --> vx-api/Profile.GetCommentedVideos (5 handlers)
+[GIN-debug] GET    /api/v1/user/profile      --> vx-api/Profile.GetOwnProfile (5 handlers)
+[GIN-debug] PUT    /api/v1/user/profile      --> vx-api/Profile.UpdateOwnProfile (5 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/profile --> vx-api/Profile.GetPublicProfile (5 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/videos --> vx-api/Profile.GetUserVideos (4 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/videos/liked --> vx-api/Profile.GetUserLikedVideos (4 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/followers --> vx-api/Profile.GetFollowers (5 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/following --> vx-api/Profile.GetFollowing (5 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/friends --> vx-api/Profile.GetFriends (5 handlers)
+[GIN-debug] POST   /api/v1/user/follow/:identifier --> vx-api/Profile.FollowUser (5 handlers)
+[GIN-debug] DELETE /api/v1/user/follow/:identifier --> vx-api/Profile.UnfollowUser (5 handlers)
+[GIN-debug] POST   /api/v1/user/block/:identifier --> vx-api/Profile.BlockUser (5 handlers)
+[GIN-debug] DELETE /api/v1/user/block/:identifier --> vx-api/Profile.UnblockUser (5 handlers)
+[GIN-debug] GET    /api/v1/user/blocked      --> vx-api/Profile.GetBlockedUsers (5 handlers)
+[GIN-debug] GET    /api/v1/user/p/:identifier --> vx-api/Profile.GetPublicProfile (5 handlers)
+[GIN-debug] GET    /api/v1/ping-profile      --> vx-api/Profile.RegisterRoutes.func1 (4 handlers)
+[GIN-debug] GET    /api/v1/explore/search    --> vx-api/Explore.SearchVideos (5 handlers)
+[GIN-debug] GET    /api/v1/explore/search/all --> vx-api/Explore.SearchAll (5 handlers)
+[GIN-debug] GET    /api/v1/explore/users     --> vx-api/Explore.SearchUsers (5 handlers)
+[GIN-debug] GET    /api/v1/explore/trending  --> vx-api/Explore.GetTrending (5 handlers)
+[GIN-debug] GET    /api/v1/explore/hashtags/search --> vx-api/Explore.SearchHashtags (4 handlers)
+[GIN-debug] GET    /api/v1/explore/sound/:id --> vx-api/Explore.GetSoundDetails (5 handlers)
+[GIN-debug] GET    /api/v1/explore/sounds/search --> vx-api/Explore.SearchSounds (5 handlers)
+[GIN-debug] GET    /api/v1/explore/sounds/trending --> vx-api/Explore.GetTrendingSounds (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/notifications --> vx-api/Inbox.GetNotifications (5 handlers)
+[GIN-debug] PUT    /api/v1/inbox/notifications/read --> vx-api/Inbox.MarkAsRead (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/unread-count --> vx-api/Inbox.GetUnreadCount (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/summary     --> vx-api/Inbox.GetNotificationSummary (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/conversations --> vx-api/Inbox.GetConversations (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/messages/:target_id --> vx-api/Inbox.GetMessages (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/send        --> vx-api/Inbox.SendMessage (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/send/voice  --> vx-api/Inbox.SendVoiceMessage (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/send/image  --> vx-api/Inbox.SendImageMessage (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/messages/:id/forward --> vx-api/Inbox.ForwardMessage (5 handlers)
+[GIN-debug] PATCH  /api/v1/inbox/messages/:id --> vx-api/Inbox.EditMessage (5 handlers)
+[GIN-debug] DELETE /api/v1/inbox/messages/:id --> vx-api/Inbox.DeleteMessage (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/messages/:id/react --> vx-api/Inbox.ReactMessage (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/conversations/:id/pin --> vx-api/Inbox.PinMessage (5 handlers)
+[GIN-debug] DELETE /api/v1/inbox/conversations/:id/pin --> vx-api/Inbox.UnpinMessage (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/conversations/:id/pin --> vx-api/Inbox.GetPinnedMessage (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/calls/history --> vx-api/Inbox.GetCallHistory (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/calls/log   --> vx-api/Inbox.CreateCallLog (5 handlers)
+[GIN-debug] GET    /api/v1/settings/         --> vx-api/Settings.GetSettings (5 handlers)
+[GIN-debug] PUT    /api/v1/settings/         --> vx-api/Settings.UpdateSettings (5 handlers)
+[GIN-debug] GET    /api/v1/studio/analytics  --> vx-api/Studio.GetAnalytics (5 handlers)
+[GIN-debug] POST   /api/v1/upload/video      --> vx-api/Upload.Upload (5 handlers)
+[GIN-debug] GET    /api/v1/ws                --> vx-api/Realtime.HandleWS (5 handlers)
+[GIN-debug] GET    /api/v1/admin/stats       --> vx-api/Admin.GetStats (6 handlers)
+[GIN-debug] GET    /api/v1/admin/users       --> vx-api/Admin.GetUsers (6 handlers)
+[GIN-debug] POST   /api/v1/admin/user/:id/toggle-admin --> vx-api/Admin.ToggleAdmin (6 handlers)
+[GIN-debug] POST   /api/v1/admin/user/:id/toggle-ban --> vx-api/Admin.ToggleBan (6 handlers)
+[GIN-debug] GET    /api/v1/admin/videos      --> vx-api/Admin.GetVideos (6 handlers)
+[GIN-debug] DELETE /api/v1/admin/video/:id   --> vx-api/Admin.DeleteVideo (6 handlers)
+[GIN-debug] DELETE /api/v1/test-delete/:id   --> main.main.func3 (4 handlers)
+VX API Engine Running on 0.0.0.0:8080...
+[GIN] 2026/09/04 - 10:57:33 | 204 | 507.572µs |   192.168.0.140 | OPTIONS  "/api/v1/home/foryou?page=1&limit=10"
+DEBUG: Serving 0 valid videos
+[GIN] 2026/09/04 - 10:57:33 | 200 |  22.33ms |   192.168.0.140 | GET      "/api/v1/home/foryou?page=1&limit=10"
+[GIN] 2026/09/04 - 10:57:50 | 204 | 571.203µs |   192.168.0.140 | OPTIONS  "/api/v1/auth/email-request"
+SMTP disabled; OTP for date300us@gmail.com is 510652
+[GIN] 2026/09/04 - 10:57:50 | 200 |  51.96ms |   192.168.0.140 | POST     "/api/v1/auth/email-request"
+[GIN] 2026/09/04 - 10:58:00 | 204 |   1.01ms |   192.168.0.140 | OPTIONS  "/api/v1/auth/email-verify"
+[GIN] 2026/09/04 - 10:58:00 | 200 |  24.37ms |   192.168.0.140 | POST     "/api/v1/auth/email-verify"
+[GIN] 2026/09/04 - 10:58:00 | 204 |  8.977µs |   192.168.0.140 | OPTIONS  "/api/v1/user/profile"
+[GIN] 2026/09/04 - 10:58:00 | 200 |   9.77ms |   192.168.0.140 | GET      "/api/v1/user/profile"
+DEBUG: WS Connection attempt - UserID: 1 Token length: 121
+DEBUG: WS Upgrade Successful
+[GIN] 2026/09/04 - 10:58:00 | 200 |   4.65ms |   192.168.0.140 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTkyMTc4ODAsInVzZXJfaWQiOjF9.lJds5KpEty3pDclfYi8wwkWFkwJFt3DgodJS4NbTCiU"
+[GIN] 2026/09/04 - 10:58:00 | 200 |   2.19ms |   192.168.0.140 | GET      "/api/v1/user/profile"

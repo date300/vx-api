@@ -1,0 +1,418 @@
+PostgreSQL Connected ✅
+2026/08/31 20:32:06 ⚠️ Redis Connection Error (Continuing without Redis): dial tcp 127.0.0.1:6379: connect: connection refused
+2026/08/31 20:32:06 error getting messaging client: project ID is required to access Firebase Cloud Messaging client
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /uploads/*filepath        --> main.main.main.func2.func5 (4 handlers)
+[GIN-debug] GET    /public/*filepath         --> main.main.main.func2.func6 (4 handlers)
+[GIN-debug] POST   /api/v1/auth/email-request --> vx-api/Auth.RequestEmailOTP (4 handlers)
+[GIN-debug] POST   /api/v1/auth/email-verify --> vx-api/Auth.VerifyEmailOTP (4 handlers)
+[GIN-debug] POST   /api/v1/auth/social       --> vx-api/Auth.SocialAuth (4 handlers)
+[GIN-debug] POST   /api/v1/auth/refresh      --> vx-api/Auth.RefreshToken (4 handlers)
+[GIN-debug] GET    /api/v1/home/foryou       --> vx-api/Home.GetForYouVideos (5 handlers)
+[GIN-debug] GET    /api/v1/home/following    --> vx-api/Home.GetFollowingVideos (5 handlers)
+[GIN-debug] GET    /api/v1/home/friends      --> vx-api/Home.GetFriendsVideos (5 handlers)
+[GIN-debug] GET    /api/v1/home/stories      --> vx-api/Home.GetStories (5 handlers)
+[GIN-debug] POST   /api/v1/home/track        --> vx-api/Home.TrackInteraction (5 handlers)
+[GIN-debug] POST   /api/v1/interaction/like  --> vx-api/Home.ToggleLike (5 handlers)
+[GIN-debug] POST   /api/v1/interaction/save  --> vx-api/Home.ToggleSave (5 handlers)
+[GIN-debug] POST   /api/v1/interaction/follow --> vx-api/Home.ToggleFollow (5 handlers)
+[GIN-debug] DELETE /api/v1/interaction/video/:id --> vx-api/Home.DeleteVideo (5 handlers)
+[GIN-debug] DELETE /api/v1/video/:id         --> vx-api/Home.DeleteVideo (5 handlers)
+[GIN-debug] POST   /api/v1/video/:id/view    --> vx-api/Home.IncrementViews (4 handlers)
+[GIN-debug] GET    /api/v1/video/:id         --> vx-api/Home.GetVideoById (5 handlers)
+[GIN-debug] GET    /api/v1/video/:id/comments --> vx-api/Home/Comment.GetComments (5 handlers)
+[GIN-debug] POST   /api/v1/video/:id/comment --> vx-api/Home/Comment.PostComment (5 handlers)
+[GIN-debug] POST   /api/v1/video/:id/comment/voice --> vx-api/Home/Comment.PostVoiceComment (5 handlers)
+[GIN-debug] POST   /api/v1/video/comment/:id/like --> vx-api/Home/Comment.ToggleCommentLike (5 handlers)
+[GIN-debug] DELETE /api/v1/video/comment/:id --> vx-api/Home/Comment.DeleteComment (5 handlers)
+[GIN-debug] POST   /api/v1/video/comment/:id/pin --> vx-api/Home/Comment.PinComment (5 handlers)
+[GIN-debug] GET    /api/v1/sticker/list      --> vx-api/Home/Sticker.GetStickers (5 handlers)
+[GIN-debug] GET    /api/v1/sticker/saved     --> vx-api/Home/Sticker.GetSavedStickers (5 handlers)
+[GIN-debug] POST   /api/v1/sticker/save/:id  --> vx-api/Home/Sticker.SaveSticker (5 handlers)
+[GIN-debug] DELETE /api/v1/sticker/save/:id  --> vx-api/Home/Sticker.UnsaveSticker (5 handlers)
+[GIN-debug] POST   /api/v1/sticker/create    --> vx-api/Home/Sticker.CreateSticker (5 handlers)
+[GIN-debug] GET    /api/v1/user/suggested    --> vx-api/Profile.GetSuggestedUsers (5 handlers)
+[GIN-debug] GET    /api/v1/user/categories   --> vx-api/Profile.GetCategories (5 handlers)
+[GIN-debug] POST   /api/v1/user/onboard      --> vx-api/Profile.SaveOnboardingData (5 handlers)
+[GIN-debug] POST   /api/v1/user/profile/avatar --> vx-api/Profile.UploadAvatar (5 handlers)
+[GIN-debug] POST   /api/v1/user/profile/cover --> vx-api/Profile.UploadCover (5 handlers)
+[GIN-debug] POST   /api/v1/user/profile/fcm-token --> vx-api/Profile.SaveFCMToken (5 handlers)
+[GIN-debug] GET    /api/v1/user/videos       --> vx-api/Profile.GetMyVideos (5 handlers)
+[GIN-debug] GET    /api/v1/user/videos/liked --> vx-api/Profile.GetLikedVideos (5 handlers)
+[GIN-debug] GET    /api/v1/user/videos/saved --> vx-api/Profile.GetSavedVideos (5 handlers)
+[GIN-debug] GET    /api/v1/user/videos/commented --> vx-api/Profile.GetCommentedVideos (5 handlers)
+[GIN-debug] GET    /api/v1/user/profile      --> vx-api/Profile.GetOwnProfile (5 handlers)
+[GIN-debug] PUT    /api/v1/user/profile      --> vx-api/Profile.UpdateOwnProfile (5 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/profile --> vx-api/Profile.GetPublicProfile (5 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/videos --> vx-api/Profile.GetUserVideos (4 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/videos/liked --> vx-api/Profile.GetUserLikedVideos (4 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/followers --> vx-api/Profile.GetFollowers (5 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/following --> vx-api/Profile.GetFollowing (5 handlers)
+[GIN-debug] GET    /api/v1/user/:identifier/friends --> vx-api/Profile.GetFriends (5 handlers)
+[GIN-debug] POST   /api/v1/user/follow/:identifier --> vx-api/Profile.FollowUser (5 handlers)
+[GIN-debug] DELETE /api/v1/user/follow/:identifier --> vx-api/Profile.UnfollowUser (5 handlers)
+[GIN-debug] GET    /api/v1/user/p/:identifier --> vx-api/Profile.GetPublicProfile (5 handlers)
+[GIN-debug] GET    /api/v1/ping-profile      --> vx-api/Profile.RegisterRoutes.func1 (4 handlers)
+[GIN-debug] GET    /api/v1/explore/search    --> vx-api/Explore.SearchVideos (5 handlers)
+[GIN-debug] GET    /api/v1/explore/users     --> vx-api/Explore.SearchUsers (5 handlers)
+[GIN-debug] GET    /api/v1/explore/trending  --> vx-api/Explore.GetTrending (5 handlers)
+[GIN-debug] GET    /api/v1/explore/sound/:id --> vx-api/Explore.GetSoundDetails (5 handlers)
+[GIN-debug] GET    /api/v1/explore/sounds/search --> vx-api/Explore.SearchSounds (5 handlers)
+[GIN-debug] GET    /api/v1/explore/sounds/trending --> vx-api/Explore.GetTrendingSounds (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/notifications --> vx-api/Inbox.GetNotifications (5 handlers)
+[GIN-debug] PUT    /api/v1/inbox/notifications/read --> vx-api/Inbox.MarkAsRead (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/unread-count --> vx-api/Inbox.GetUnreadCount (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/conversations --> vx-api/Inbox.GetConversations (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/messages/:target_id --> vx-api/Inbox.GetMessages (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/send        --> vx-api/Inbox.SendMessage (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/messages/:id/forward --> vx-api/Inbox.ForwardMessage (5 handlers)
+[GIN-debug] PATCH  /api/v1/inbox/messages/:id --> vx-api/Inbox.EditMessage (5 handlers)
+[GIN-debug] DELETE /api/v1/inbox/messages/:id --> vx-api/Inbox.DeleteMessage (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/messages/:id/react --> vx-api/Inbox.ReactMessage (5 handlers)
+[GIN-debug] POST   /api/v1/inbox/conversations/:id/pin --> vx-api/Inbox.PinMessage (5 handlers)
+[GIN-debug] DELETE /api/v1/inbox/conversations/:id/pin --> vx-api/Inbox.UnpinMessage (5 handlers)
+[GIN-debug] GET    /api/v1/inbox/conversations/:id/pin --> vx-api/Inbox.GetPinnedMessage (5 handlers)
+[GIN-debug] GET    /api/v1/settings/         --> vx-api/Settings.GetSettings (5 handlers)
+[GIN-debug] PUT    /api/v1/settings/         --> vx-api/Settings.UpdateSettings (5 handlers)
+[GIN-debug] GET    /api/v1/studio/analytics  --> vx-api/Studio.GetAnalytics (5 handlers)
+[GIN-debug] POST   /api/v1/upload/video      --> vx-api/Upload.Upload (5 handlers)
+[GIN-debug] GET    /api/v1/ws                --> vx-api/Realtime.HandleWS (5 handlers)
+[GIN-debug] GET    /api/v1/admin/stats       --> vx-api/Admin.GetStats (6 handlers)
+[GIN-debug] GET    /api/v1/admin/users       --> vx-api/Admin.GetUsers (6 handlers)
+[GIN-debug] POST   /api/v1/admin/user/:id/toggle-admin --> vx-api/Admin.ToggleAdmin (6 handlers)
+[GIN-debug] POST   /api/v1/admin/user/:id/toggle-ban --> vx-api/Admin.ToggleBan (6 handlers)
+[GIN-debug] GET    /api/v1/admin/videos      --> vx-api/Admin.GetVideos (6 handlers)
+[GIN-debug] DELETE /api/v1/admin/video/:id   --> vx-api/Admin.DeleteVideo (6 handlers)
+[GIN-debug] DELETE /api/v1/test-delete/:id   --> main.main.func3 (4 handlers)
+VX API Engine Running on 0.0.0.0:8080...
+[GIN] 2026/08/31 - 20:32:07 | 200 |   2.27ms |    192.168.0.79 | GET      "/api/v1/inbox/conversations"
+[GIN] 2026/08/31 - 20:32:07 | 200 |   8.28ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications?limit=50"
+DEBUG: WS Connection attempt - UserID: 17 Token length: 123
+DEBUG: WS Upgrade Successful
+[GIN] 2026/08/31 - 20:32:07 | 200 | 195.661µs |    192.168.0.79 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTg4NjExNDYsInVzZXJfaWQiOjE3fQ.RWQQrKK01caZuyJOYIzUD_WdUfkEvOeeJ2vguOkid_g"
+[GIN] 2026/08/31 - 20:32:07 | 200 | 940.65µs |    192.168.0.79 | GET      "/api/v1/inbox/notifications"
+[GIN] 2026/08/31 - 20:32:22 | 404 |  2.886µs |   192.168.0.140 | HEAD     "/api/v1/home/foryou"
+[GIN] 2026/08/31 - 20:32:45 | 200 | 899.152µs |    192.168.0.79 | GET      "/api/v1/inbox/notifications?limit=50"
+[GIN] 2026/08/31 - 20:32:45 | 200 |   1.32ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications"
+[GIN] 2026/08/31 - 20:32:45 | 200 |   6.82ms |    192.168.0.79 | GET      "/api/v1/inbox/conversations"
+[GIN] 2026/08/31 - 20:33:04 | 201 | 386.79ms |    192.168.0.79 | POST     "/api/v1/upload/video"
+DEBUG: File not found for video 81: public/uploads/videos/8d492b2b-7668-438f-adbb-e65418c83477.mp4
+DEBUG: File not found for video 82: public/uploads/videos/bd38e20a-d7f1-4750-ae46-d3a5b05900a9.mp4
+DEBUG: File not found for video 84: public/uploads/processed/8ffc2081-8fbf-4f08-960d-6072c599c1f4/master.m3u8
+DEBUG: File not found for video 76: public/uploads/videos/4b79ad0b-7c9b-4746-a63b-618fcc7ed2a4.mp4
+DEBUG: File not found for video 79: public/uploads/videos/dd26e0ea-1676-4b0e-b110-70d6876fc7e0.mp4
+DEBUG: File not found for video 77: public/uploads/videos/46d3486e-494b-496b-882d-d61131b41ea4.mp4
+DEBUG: File not found for video 78: public/uploads/videos/1d5d1583-aaa7-4f80-8dde-02ef9f257793.mp4
+DEBUG: File not found for video 86: public/uploads/videos/1e630545-cf6f-427a-8c2e-50888ebd8c12.mp4
+DEBUG: File not found for video 83: public/uploads/processed/278f8a04-34de-4a3c-9a8e-04a1e9a80f10/master.m3u8
+DEBUG: File not found for video 80: public/uploads/videos/b61f8565-612d-4179-b129-8e2dd2f632ff.mp4
+DEBUG: File not found for video 85: public/uploads/processed/e080d03f-6f36-4c77-9e4b-28beeacee32a/master.m3u8
+DEBUG: Serving 4 valid videos
+[GIN] 2026/08/31 - 20:33:04 | 200 |   6.53ms |    192.168.0.79 | GET      "/api/v1/home/foryou?page=1&limit=10"
+[GIN] 2026/08/31 - 20:33:15 | 200 |   1.97ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:33:15 | 200 |   2.86ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+[GIN] 2026/08/31 - 20:33:15 | 200 |   7.49ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:33:15 | 200 |   11.2ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:33:15 | 200 |   9.29ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+DEBUG: WS Connection attempt - UserID: 17 Token length: 123
+DEBUG: WS Upgrade Successful
+[GIN] 2026/08/31 - 20:33:17 | 200 | 207.773µs |    192.168.0.79 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTg4NjExNDYsInVzZXJfaWQiOjE3fQ.RWQQrKK01caZuyJOYIzUD_WdUfkEvOeeJ2vguOkid_g"
+DEBUG: WS Connection attempt - UserID: 17 Token length: 123
+DEBUG: WS Upgrade Successful
+[GIN] 2026/08/31 - 20:33:17 | 200 |   1.24ms |    192.168.0.79 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTg4NjExNDYsInVzZXJfaWQiOjE3fQ.RWQQrKK01caZuyJOYIzUD_WdUfkEvOeeJ2vguOkid_g"
+[GIN] 2026/08/31 - 20:33:18 | 200 |   1.69ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+DEBUG: File not found for video 81: public/uploads/videos/8d492b2b-7668-438f-adbb-e65418c83477.mp4
+DEBUG: File not found for video 82: public/uploads/videos/bd38e20a-d7f1-4750-ae46-d3a5b05900a9.mp4
+DEBUG: File not found for video 84: public/uploads/processed/8ffc2081-8fbf-4f08-960d-6072c599c1f4/master.m3u8
+DEBUG: File not found for video 76: public/uploads/videos/4b79ad0b-7c9b-4746-a63b-618fcc7ed2a4.mp4
+DEBUG: File not found for video 79: public/uploads/videos/dd26e0ea-1676-4b0e-b110-70d6876fc7e0.mp4
+DEBUG: File not found for video 77: public/uploads/videos/46d3486e-494b-496b-882d-d61131b41ea4.mp4
+DEBUG: File not found for video 78: public/uploads/videos/1d5d1583-aaa7-4f80-8dde-02ef9f257793.mp4
+DEBUG: File not found for video 86: public/uploads/videos/1e630545-cf6f-427a-8c2e-50888ebd8c12.mp4
+DEBUG: File not found for video 83: public/uploads/processed/278f8a04-34de-4a3c-9a8e-04a1e9a80f10/master.m3u8
+DEBUG: File not found for video 80: public/uploads/videos/b61f8565-612d-4179-b129-8e2dd2f632ff.mp4
+DEBUG: File not found for video 85: public/uploads/processed/e080d03f-6f36-4c77-9e4b-28beeacee32a/master.m3u8
+DEBUG: Serving 4 valid videos
+[GIN] 2026/08/31 - 20:33:18 | 200 |   6.23ms |    192.168.0.79 | GET      "/api/v1/home/foryou?page=1&limit=10"
+2026/08/31 20:33:18 DEBUG: Static Access: /uploads/images/807f76c2-5532-46f0-a878-ce8ef16191fb.jpg -> public/uploads/images/807f76c2-5532-46f0-a878-ce8ef16191fb.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:33:18 | 200 |    1.9ms |    192.168.0.79 | POST     "/api/v1/user/profile/fcm-token"
+[GIN] 2026/08/31 - 20:33:18 | 200 | 111.34ms |    192.168.0.79 | GET      "/uploads/images/807f76c2-5532-46f0-a878-ce8ef16191fb.jpg"
+2026/08/31 20:33:21 DEBUG: Static Access: /uploads/images/eaa2ca5c-3eee-4b14-a241-fd0c889d03ed.jpg -> public/uploads/images/eaa2ca5c-3eee-4b14-a241-fd0c889d03ed.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:33:21 | 200 | 524.553µs |    192.168.0.79 | GET      "/uploads/images/eaa2ca5c-3eee-4b14-a241-fd0c889d03ed.jpg"
+2026/08/31 20:33:25 DEBUG: Static Access: /uploads/images/347188af-a4b6-4449-b5a8-0e5f9168ef17.jpg -> public/uploads/images/347188af-a4b6-4449-b5a8-0e5f9168ef17.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:33:29 | 200 |    3.54s |    192.168.0.79 | GET      "/uploads/images/347188af-a4b6-4449-b5a8-0e5f9168ef17.jpg"
+[GIN] 2026/08/31 - 20:34:18 | 200 |   1.66ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications?limit=50"
+[GIN] 2026/08/31 - 20:34:18 | 200 |    1.3ms |    192.168.0.79 | GET      "/api/v1/inbox/conversations"
+[GIN] 2026/08/31 - 20:34:18 | 200 |   1.16ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications"
+[GIN] 2026/08/31 - 20:34:41 | 200 |   8.86ms |    192.168.0.79 | POST     "/api/v1/interaction/like"
+[GIN] 2026/08/31 - 20:34:42 | 200 |   3.37ms |    192.168.0.79 | POST     "/api/v1/interaction/like"
+[GIN] 2026/08/31 - 20:34:43 | 200 |  15.48ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:34:43 | 200 |  23.97ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:34:43 | 200 |     27ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+[GIN] 2026/08/31 - 20:34:43 | 200 |     10ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:34:43 | 200 |   6.56ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:34:45 | 200 |   2.74ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+[GIN] 2026/08/31 - 20:34:45 | 200 |   7.36ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:34:45 | 200 |   2.98ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:34:45 | 200 |   2.93ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+[GIN] 2026/08/31 - 20:34:45 | 200 |   5.19ms |    192.168.0.79 | GET      "/api/v1/video/90"
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:34:45 | 200 |  11.14ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+[GIN] 2026/08/31 - 20:34:45 | 200 |  17.53ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+[GIN] 2026/08/31 - 20:34:46 | 200 |   2.38ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:34:46 | 200 |   8.12ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:34:46 | 200 |   12.5ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+2026/08/31 20:34:56 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:34:56 | 404 | 168.239µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:34:56 | 200 |   3.29ms |    192.168.0.79 | GET      "/api/v1/video/86"
+[GIN] 2026/08/31 - 20:34:56 | 200 |   6.18ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:34:56 | 200 |  11.34ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+[GIN] 2026/08/31 - 20:34:56 | 200 |  12.76ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+[GIN] 2026/08/31 - 20:34:56 | 200 |   1.97ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:34:56 | 200 |   9.74ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:34:56 | 200 |  13.54ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+DEBUG: Force closing stale connection for user: 17
+DEBUG: Force closing stale connection for user: 17
+2026/08/31 20:35:08 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:08 | 404 | 186.443µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+DEBUG: WS Connection attempt - UserID: 17 Token length: 123
+DEBUG: WS Upgrade Successful
+[GIN] 2026/08/31 - 20:35:18 | 200 | 447.066µs |    192.168.0.79 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTg4NjExNDYsInVzZXJfaWQiOjE3fQ.RWQQrKK01caZuyJOYIzUD_WdUfkEvOeeJ2vguOkid_g"
+[GIN] 2026/08/31 - 20:35:21 | 200 |   2.37ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:35:21 | 200 |   3.97ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+[GIN] 2026/08/31 - 20:35:21 | 200 |  16.02ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:35:21 | 200 |   2.03ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:35:21 | 200 |   1.52ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:35:21 | 200 |   3.59ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+[GIN] 2026/08/31 - 20:35:21 | 200 |   14.1ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:35:25 | 200 |   1.13ms |    192.168.0.79 | GET      "/api/v1/inbox/conversations"
+[GIN] 2026/08/31 - 20:35:25 | 200 |   2.56ms |    192.168.0.79 | GET      "/api/v1/inbox/unread-count"
+2026/08/31 20:35:26 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:26 | 404 | 140.746µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+[GIN] 2026/08/31 - 20:35:26 | 200 |   9.57ms |    192.168.0.79 | GET      "/api/v1/explore/trending"
+[GIN] 2026/08/31 - 20:35:27 | 200 |   7.15ms |    192.168.0.79 | GET      "/api/v1/explore/trending"
+[GIN] 2026/08/31 - 20:35:29 | 401 | 63.971µs |   192.168.0.140 | POST     "/api/v1/upload/video"
+[GIN] 2026/08/31 - 20:35:31 | 200 |   6.32ms |    192.168.0.79 | GET      "/api/v1/explore/trending"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:35:34 | 200 |   1.61ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+[GIN] 2026/08/31 - 20:35:34 | 200 |   5.79ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:35:34 | 200 |  12.98ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+2026/08/31 20:35:34 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:34 | 404 | 159.983µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+2026/08/31 20:35:35 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:35 | 404 | 140.115µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+SMTP disabled; OTP for test@example.com is 219034
+
+2026/08/31 20:35:39 [31;1m/home/developer/Desktop/vxapp/vx-api/Auth/auth.go:96 [35;1mrecord not found
+[0m[33m[1.444ms] [34;1m[rows:0][0m SELECT * FROM "users" WHERE (email = 'test@example.com' AND provider = 'email') AND "users"."deleted_at" IS NULL ORDER BY "users"."id" LIMIT 1
+[GIN] 2026/08/31 - 20:35:39 | 200 |   6.31ms |   192.168.0.140 | POST     "/api/v1/auth/email-request"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:35:39 | 200 |    1.7ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+[GIN] 2026/08/31 - 20:35:39 | 200 |   2.82ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:35:39 | 200 |  19.72ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+[GIN] 2026/08/31 - 20:35:39 | 200 |   2.49ms |    192.168.0.79 | GET      "/api/v1/video/84"
+[GIN] 2026/08/31 - 20:35:40 | 200 |   3.56ms |    192.168.0.79 | GET      "/api/v1/video/89"
+[GIN] 2026/08/31 - 20:35:42 | 200 |   3.73ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+[GIN] 2026/08/31 - 20:35:42 | 200 |   7.21ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:35:42 | 200 |   9.79ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:35:44 | 200 |   2.01ms |    192.168.0.79 | GET      "/api/v1/inbox/conversations"
+[GIN] 2026/08/31 - 20:35:44 | 200 |   1.59ms |    192.168.0.79 | GET      "/api/v1/inbox/unread-count"
+[GIN] 2026/08/31 - 20:35:44 | 400 | 173.188µs |   192.168.0.140 | POST     "/api/v1/auth/email-verify"
+2026/08/31 20:35:45 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:45 | 404 | 177.265µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:35:46 | 200 |   3.06ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+[GIN] 2026/08/31 - 20:35:46 | 200 |   8.15ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:35:46 | 200 |  11.17ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+[GIN] 2026/08/31 - 20:35:47 | 200 |   2.87ms |    192.168.0.79 | GET      "/api/v1/video/88"
+[GIN] 2026/08/31 - 20:35:47 | 200 |   2.69ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:35:47 | 200 |   4.71ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+[GIN] 2026/08/31 - 20:35:47 | 200 |  16.33ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:35:48 | 200 |   4.12ms |    192.168.0.79 | GET      "/api/v1/video/85"
+2026/08/31 20:35:49 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:49 | 404 | 177.176µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:35:50 | 200 |   2.17ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:35:50 | 200 |   7.42ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+[GIN] 2026/08/31 - 20:35:50 | 200 |   2.48ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+[GIN] 2026/08/31 - 20:35:50 | 200 |   3.35ms |    192.168.0.79 | GET      "/api/v1/video/76"
+2026/08/31 20:35:50 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:50 | 404 | 137.21µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+[GIN] 2026/08/31 - 20:35:51 | 200 |   1.34ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:35:51 | 200 |    7.9ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:35:51 | 200 |   3.79ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+2026/08/31 20:35:51 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:51 | 404 | 158.551µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+2026/08/31 20:35:51 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:51 | 404 | 149.603µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+[GIN] 2026/08/31 - 20:35:51 | 200 |   2.72ms |    192.168.0.79 | GET      "/api/v1/video/77"
+2026/08/31 20:35:51 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:51 | 404 | 154.142µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+2026/08/31 20:35:52 DEBUG: Static Access: /uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg -> public/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:35:52 | 404 | 171.244µs |    192.168.0.79 | GET      "/uploads/thumbnails/46d3486e-494b-496b-882d-d61131b41ea4.jpg"
+[GIN] 2026/08/31 - 20:36:08 | 200 |   3.17ms |   192.168.0.140 | POST     "/api/v1/auth/email-verify"
+[GIN] 2026/08/31 - 20:36:14 | 201 | 497.71ms |   192.168.0.140 | POST     "/api/v1/upload/video"
+2026/08/31 20:36:14 Transcoding to 360p...
+2026/08/31 20:36:19 Transcoding to 480p...
+2026/08/31 20:36:24 Transcoding to 720p...
+2026/08/31 20:36:33 Transcoding to 1080p...
+2026/08/31 20:36:50 Transcoding to 1440p...
+DEBUG: Force closing stale connection for user: 17
+DEBUG: WS Connection attempt - UserID: 17 Token length: 123
+DEBUG: WS Upgrade Successful
+[GIN] 2026/08/31 - 20:37:14 | 200 | 322.631µs |    192.168.0.79 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTg4NjExNDYsInVzZXJfaWQiOjE3fQ.RWQQrKK01caZuyJOYIzUD_WdUfkEvOeeJ2vguOkid_g"
+DEBUG: Force closing stale connection for user: 17
+DEBUG: WS Connection attempt - UserID: 17 Token length: 123
+DEBUG: WS Upgrade Successful
+[GIN] 2026/08/31 - 20:39:13 | 200 | 567.927µs |    192.168.0.79 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTg4NjExNDYsInVzZXJfaWQiOjE3fQ.RWQQrKK01caZuyJOYIzUD_WdUfkEvOeeJ2vguOkid_g"
+[GIN] 2026/08/31 - 20:40:55 | 200 |   1.29ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications?limit=50"
+[GIN] 2026/08/31 - 20:40:55 | 200 | 945.682µs |    192.168.0.79 | GET      "/api/v1/inbox/conversations"
+[GIN] 2026/08/31 - 20:40:55 | 200 |   1.01ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:40:56 | 200 |   2.98ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+[GIN] 2026/08/31 - 20:40:56 | 200 |   7.19ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:40:56 | 200 |  11.87ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+DEBUG: WS Connection attempt - UserID: 17 Token length: 123
+DEBUG: WS Upgrade Successful
+[GIN] 2026/08/31 - 20:40:58 | 200 | 438.301µs |    192.168.0.79 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTg4NjExNDYsInVzZXJfaWQiOjE3fQ.RWQQrKK01caZuyJOYIzUD_WdUfkEvOeeJ2vguOkid_g"
+[GIN] 2026/08/31 - 20:41:01 | 200 |   5.92ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+[GIN] 2026/08/31 - 20:41:01 | 200 |  13.34ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:41:01 | 200 |  16.76ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:41:02 | 200 |   1.71ms |    192.168.0.79 | GET      "/api/v1/inbox/conversations"
+[GIN] 2026/08/31 - 20:41:02 | 200 |   1.51ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications?limit=50"
+[GIN] 2026/08/31 - 20:41:02 | 200 |   1.32ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:41:03 | 200 |   3.62ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+[GIN] 2026/08/31 - 20:41:03 | 200 |   9.24ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:41:03 | 200 |  14.22ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+[GIN] 2026/08/31 - 20:41:05 | 200 |   5.16ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+[GIN] 2026/08/31 - 20:41:05 | 200 |  10.76ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:41:05 | 200 |  14.33ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:41:18 | 200 |   1.81ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications?limit=50"
+[GIN] 2026/08/31 - 20:41:18 | 200 |   2.25ms |    192.168.0.79 | GET      "/api/v1/inbox/conversations"
+[GIN] 2026/08/31 - 20:41:18 | 200 |  14.88ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications"
+[GIN] 2026/08/31 - 20:41:24 | 201 |    4.33s |    192.168.0.79 | POST     "/api/v1/upload/video"
+DEBUG: File not found for video 81: public/uploads/videos/8d492b2b-7668-438f-adbb-e65418c83477.mp4
+DEBUG: File not found for video 82: public/uploads/videos/bd38e20a-d7f1-4750-ae46-d3a5b05900a9.mp4
+DEBUG: File not found for video 84: public/uploads/processed/8ffc2081-8fbf-4f08-960d-6072c599c1f4/master.m3u8
+DEBUG: File not found for video 76: public/uploads/videos/4b79ad0b-7c9b-4746-a63b-618fcc7ed2a4.mp4
+DEBUG: File not found for video 79: public/uploads/videos/dd26e0ea-1676-4b0e-b110-70d6876fc7e0.mp4
+DEBUG: File not found for video 77: public/uploads/videos/46d3486e-494b-496b-882d-d61131b41ea4.mp4
+DEBUG: File not found for video 78: public/uploads/videos/1d5d1583-aaa7-4f80-8dde-02ef9f257793.mp4
+DEBUG: File not found for video 86: public/uploads/videos/1e630545-cf6f-427a-8c2e-50888ebd8c12.mp4
+DEBUG: File not found for video 83: public/uploads/processed/278f8a04-34de-4a3c-9a8e-04a1e9a80f10/master.m3u8
+DEBUG: File not found for video 80: public/uploads/videos/b61f8565-612d-4179-b129-8e2dd2f632ff.mp4
+DEBUG: File not found for video 85: public/uploads/processed/e080d03f-6f36-4c77-9e4b-28beeacee32a/master.m3u8
+DEBUG: Serving 6 valid videos
+[GIN] 2026/08/31 - 20:41:24 | 200 |   18.7ms |    192.168.0.79 | GET      "/api/v1/home/foryou?page=1&limit=10"
+2026/08/31 20:41:24 Transcoding to 360p...
+2026/08/31 20:41:24 DEBUG: Static Access: /uploads/thumbnails/f180d068-e3ba-43b9-9e95-43f7f75c0a81.jpg -> public/uploads/thumbnails/f180d068-e3ba-43b9-9e95-43f7f75c0a81.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:41:24 | 200 |   1.22ms |    192.168.0.79 | GET      "/uploads/thumbnails/f180d068-e3ba-43b9-9e95-43f7f75c0a81.jpg"
+2026/08/31 20:41:25 DEBUG: Static Access: /uploads/thumbnails/3e1dda5d-5b6c-4043-bd8f-8977b8b50211.jpg -> public/uploads/thumbnails/3e1dda5d-5b6c-4043-bd8f-8977b8b50211.jpg | UA: Dart/3.13 (dart:io) | Range: 
+[GIN] 2026/08/31 - 20:41:25 | 200 | 760.251µs |    192.168.0.79 | GET      "/uploads/thumbnails/3e1dda5d-5b6c-4043-bd8f-8977b8b50211.jpg"
+[GIN] 2026/08/31 - 20:41:28 | 200 |    2.7ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:41:28 | 200 |  18.36ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:41:28 | 200 |   7.19ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: GetPublicProfile for identifier: @Sohan
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: resolveUserByIdentifier searching for: '@Sohan'
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:41:30 | 200 |   1.99ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/profile"
+[GIN] 2026/08/31 - 20:41:30 | 200 |  10.79ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos"
+DEBUG: Found user by username: 'Sohan' (ID: 17)
+[GIN] 2026/08/31 - 20:41:30 | 200 |  17.08ms |    192.168.0.79 | GET      "/api/v1/user/@Sohan/videos/liked"
+2026/08/31 20:41:30 Transcoding to 480p...
+[GIN] 2026/08/31 - 20:41:31 | 200 |   3.34ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+[GIN] 2026/08/31 - 20:41:31 | 200 |   5.09ms |    192.168.0.79 | GET      "/api/v1/user/videos/liked"
+[GIN] 2026/08/31 - 20:41:31 | 200 |  17.93ms |    192.168.0.79 | GET      "/api/v1/user/videos"
+[GIN] 2026/08/31 - 20:41:33 | 200 |    2.3ms |    192.168.0.79 | GET      "/api/v1/video/92"
+2026/08/31 20:41:36 Transcoding to 720p...
+2026/08/31 20:41:45 Transcoding to 1080p...
+2026/08/31 20:42:02 Transcoding to 1440p...
+[GIN] 2026/08/31 - 20:42:19 | 200 |   1.06ms |    192.168.0.79 | GET      "/api/v1/inbox/notifications?limit=50"
+[GIN] 2026/08/31 - 20:42:19 | 200 | 661.594µs |    192.168.0.79 | GET      "/api/v1/inbox/notifications"
+[GIN] 2026/08/31 - 20:42:19 | 200 |   4.42ms |    192.168.0.79 | GET      "/api/v1/inbox/conversations"
+DEBUG: WS Connection attempt - UserID: 17 Token length: 123
+DEBUG: WS Upgrade Successful
+[GIN] 2026/08/31 - 20:42:29 | 200 | 313.054µs |    192.168.0.79 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTg4NjExNDYsInVzZXJfaWQiOjE3fQ.RWQQrKK01caZuyJOYIzUD_WdUfkEvOeeJ2vguOkid_g"
+DEBUG: WS Connection attempt - UserID: 17 Token length: 123
+DEBUG: WS Upgrade Successful
+[GIN] 2026/08/31 - 20:42:29 | 200 |   6.21ms |    192.168.0.79 | GET      "/api/v1/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI0MTg4NjExNDYsInVzZXJfaWQiOjE3fQ.RWQQrKK01caZuyJOYIzUD_WdUfkEvOeeJ2vguOkid_g"
+[GIN] 2026/08/31 - 20:42:29 | 200 |   4.34ms |    192.168.0.79 | GET      "/api/v1/user/profile"
+DEBUG: File not found for video 81: public/uploads/videos/8d492b2b-7668-438f-adbb-e65418c83477.mp4
+DEBUG: File not found for video 82: public/uploads/videos/bd38e20a-d7f1-4750-ae46-d3a5b05900a9.mp4
+DEBUG: File not found for video 84: public/uploads/processed/8ffc2081-8fbf-4f08-960d-6072c599c1f4/master.m3u8
+DEBUG: File not found for video 76: public/uploads/videos/4b79ad0b-7c9b-4746-a63b-618fcc7ed2a4.mp4
+DEBUG: File not found for video 79: public/uploads/videos/dd26e0ea-1676-4b0e-b110-70d6876fc7e0.mp4
+DEBUG: File not found for video 77: public/uploads/videos/46d3486e-494b-496b-882d-d61131b41ea4.mp4
+DEBUG: File not found for video 78: public/uploads/videos/1d5d1583-aaa7-4f80-8dde-02ef9f257793.mp4
+DEBUG: File not found for video 86: public/uploads/videos/1e630545-cf6f-427a-8c2e-50888ebd8c12.mp4
+DEBUG: File not found for video 83: public/uploads/processed/278f8a04-34de-4a3c-9a8e-04a1e9a80f10/master.m3u8
+DEBUG: File not found for video 80: public/uploads/videos/b61f8565-612d-4179-b129-8e2dd2f632ff.mp4
+DEBUG: File not found for video 85: public/uploads/processed/e080d03f-6f36-4c77-9e4b-28beeacee32a/master.m3u8
+DEBUG: Serving 6 valid videos
+[GIN] 2026/08/31 - 20:42:29 | 200 |  27.88ms |    192.168.0.79 | GET      "/api/v1/home/foryou?page=1&limit=10"
+[GIN] 2026/08/31 - 20:42:29 | 200 |   1.88ms |    192.168.0.79 | POST     "/api/v1/user/profile/fcm-token"
