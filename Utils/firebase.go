@@ -3,6 +3,7 @@ package Utils
 import (
 	"context"
 	"log"
+	"os"
 	"path/filepath"
 
 	firebase "firebase.google.com/go/v4"
@@ -16,6 +17,12 @@ var fcmClient *messaging.Client
 func InitFirebase() {
 	ctx := context.Background()
 	serviceAccountPath := filepath.Join("Config", "service-account.json")
+
+	// Check if service account file exists
+	if _, err := os.Stat(serviceAccountPath); os.IsNotExist(err) {
+		log.Println("Firebase Service Account file NOT found at Config/service-account.json. Skipping Firebase initialization.")
+		return
+	}
 
 	opt := option.WithServiceAccountFile(serviceAccountPath)
 	app, err := firebase.NewApp(ctx, nil, opt)
@@ -31,7 +38,7 @@ func InitFirebase() {
 	}
 
 	fcmClient = client
-	log.Println("Firebase Admin SDK initialized successfully")
+	log.Println("Firebase Admin SDK initialized successfully ✅")
 }
 
 // SendFCMNotification sends a push notification to a specific token
